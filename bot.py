@@ -1,8 +1,6 @@
-import os
-import threading
 import logging
 from aiogram import Bot, Dispatcher, executor, types
-from config import TOKEN, IMAGE_PATH
+from config import TOKEN, IMAGE_PATH, CHANNEL_ID
 
 
 logging.basicConfig(level=logging.INFO)
