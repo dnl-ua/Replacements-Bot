@@ -1,20 +1,13 @@
 import os
 import threading
-import urllib.request
 import logging
 from aiogram import Bot, Dispatcher, executor, types
-from config import TOKEN, URL, IMAGE_PATH
-
-
-def download_image():
-        url = URL
-        urllib.request.urlretrieve(url, IMAGE_PATH)
+from config import TOKEN, IMAGE_PATH
 
 
 logging.basicConfig(level=logging.INFO)
 
-api_token = TOKEN
-bot = Bot(token=api_token)
+bot = Bot(token=TOKEN)
 dp = Dispatcher(bot)
 
 @dp.message_handler(commands=['start', 'help'])
@@ -24,7 +17,6 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler(commands=['send'])
 async def send(message: types.Message):
-        download_image()
         with open(IMAGE_PATH, 'rb') as photo:
                 await message.reply_photo(photo)
 
