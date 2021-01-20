@@ -1,6 +1,7 @@
 # Заменный бот
 Бот берет изображение замен с сайта колледжа и отправляет в телеграм. <br />
-Бот в телеграм [@cctereplbot](https://t.me/cctereplbot)
+Бот в телеграм: [@cctereplbot](https://t.me/cctereplbot)
+Канал в телеграм: [@ccterepls](https://t.me/ccterepls)
 
 # Автоматизация
 Я создал [cron](https://crontab.guru/crontab.5.html) файл который будет запускать [download_image.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/download_image.py) каждый день в 13:00, а после этого, в 13:05, он запустит [send_to_channel.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/send_to_channel.py) что отправит замены в канал. Команда выглядит приблезительно так: <br /> 
