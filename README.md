@@ -22,11 +22,11 @@ CHANNEL_ID = # id канала в который будет отсылаться
 <br />
 
 # Автоматизация
-Я создал [cron](https://crontab.guru/crontab.5.html) файл который будет запускать [download_image.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/download_image.py) каждый день (кроме субботы) в 12:30, а после этого, в 12:35, он запустит [send_to_channel.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/send_to_channel.py) что отправит замены в канал. Команды которые нужно записать в `crontab -e` выглядят приблезительно так: <br />
+Я создал [cron](https://crontab.guru/crontab.5.html) файл который будет запускать [download_image.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/download_image.py) каждый день (кроме субботы и пятницы) в 12:30, а после этого, в 12:35, он запустит [send_to_channel.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/send_to_channel.py) что отправит замены в канал. Команды которые нужно записать в `crontab -e` выглядят приблезительно так: <br />
 
-`30 12 * * 0-5 /PATH/TO/PYTHON/BINARY /PATH/TO/download_image.py` <br />
+`30 12 * * 0-4 /PATH/TO/PYTHON/BINARY /PATH/TO/download_image.py` <br />
 для [download_image.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/download_image.py) <br />
-`35 13 * * 0-5 /PATH/TO/PYTHON/BINARY /PATH/TO/send_to_channel.py` <br />
+`35 13 * * 0-4 /PATH/TO/PYTHON/BINARY /PATH/TO/send_to_channel.py` <br />
 для [send_to_channel.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/send_to_channel.py) <br />
 
 На Windows это можно реализовать через Диспетчер Задач. <br />
