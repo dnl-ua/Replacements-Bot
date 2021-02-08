@@ -26,7 +26,7 @@ CHANNEL_ID = # id канала в который будет отсылаться
 
 `30 12 * * 0-4 /PATH/TO/PYTHON/BINARY /PATH/TO/download_image.py` <br />
 для [download_image.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/download_image.py) <br />
-`35 13 * * 0-4 /PATH/TO/PYTHON/BINARY /PATH/TO/send_to_channel.py` <br />
+`35 12 * * 0-4 /PATH/TO/PYTHON/BINARY /PATH/TO/send_to_channel.py` <br />
 для [send_to_channel.py](https://github.com/kagarlytskiy/cctereplbot/blob/main/send_to_channel.py) <br />
 
 На Windows это можно реализовать через Диспетчер Задач. <br />
