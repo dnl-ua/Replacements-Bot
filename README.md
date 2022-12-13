@@ -1,7 +1,5 @@
 # Заменный бот
 Бот берет изображение замен с сайта колледжа и отправляет в телеграм. <br />
-Бот в телеграм: [@cctereplbot](https://t.me/cctereplbot) <br />
-Канал в телеграм: [@ccterepls](https://t.me/ccterepls)
 
 # Установка
 Зависимости: [python](https://command-not-found.com/python), [cron](https://command-not-found.com/crontab) (опционально). <br />
