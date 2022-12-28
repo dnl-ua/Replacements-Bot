@@ -6,7 +6,7 @@
 Библиотеки:  [aiogram](https://pypi.org/project/aiogram/), [urllib3](https://pypi.org/project/urllib3/)
 
 ```bash
-git clone https://github.com/kagarlytskiy/cctereplbot
+git clone https://github.com/dnl-ua/cctereplbot
 cd cctereplbot
 python bot.py # или python3 bot.py
 ``` 
